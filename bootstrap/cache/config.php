@@ -225,8 +225,8 @@
       'file' => 
       array (
         'driver' => 'file',
-        'path' => 'C:\\ProjetosEstudos\\urna-simulado-Old\\storage\\framework/cache/data',
-        'lock_path' => 'C:\\ProjetosEstudos\\urna-simulado-Old\\storage\\framework/cache/data',
+        'path' => 'C:\\ProjetosEstudos\\urna-simulado-back\\storage\\framework/cache/data',
+        'lock_path' => 'C:\\ProjetosEstudos\\urna-simulado-back\\storage\\framework/cache/data',
       ),
       'memcached' => 
       array (
@@ -281,7 +281,7 @@
       array (
         'driver' => 'sqlite',
         'url' => NULL,
-        'database' => 'C:\\ProjetosEstudos\\urna-simulado-Old\\database\\database.sqlite',
+        'database' => 'C:\\ProjetosEstudos\\urna-simulado-back\\database\\database.sqlite',
         'prefix' => '',
         'foreign_key_constraints' => true,
         'busy_timeout' => NULL,
@@ -398,7 +398,7 @@
       'local' => 
       array (
         'driver' => 'local',
-        'root' => 'C:\\ProjetosEstudos\\urna-simulado-Old\\storage\\app/private',
+        'root' => 'C:\\ProjetosEstudos\\urna-simulado-back\\storage\\app/private',
         'serve' => true,
         'throw' => false,
         'report' => false,
@@ -406,7 +406,7 @@
       'public' => 
       array (
         'driver' => 'local',
-        'root' => 'C:\\ProjetosEstudos\\urna-simulado-Old\\storage\\app/public',
+        'root' => 'C:\\ProjetosEstudos\\urna-simulado-back\\storage\\app/public',
         'url' => 'http://localhost/storage',
         'visibility' => 'public',
         'throw' => false,
@@ -428,7 +428,7 @@
     ),
     'links' => 
     array (
-      'C:\\ProjetosEstudos\\urna-simulado-Old\\public\\storage' => 'C:\\ProjetosEstudos\\urna-simulado-Old\\storage\\app/public',
+      'C:\\ProjetosEstudos\\urna-simulado-back\\public\\storage' => 'C:\\ProjetosEstudos\\urna-simulado-back\\storage\\app/public',
     ),
   ),
   'l5-swagger' => 
@@ -455,8 +455,8 @@
           'format_to_use_for_docs' => 'json',
           'annotations' => 
           array (
-            0 => 'C:\\ProjetosEstudos\\urna-simulado-Old\\app',
-            1 => 'C:\\ProjetosEstudos\\urna-simulado-Old\\app/OpenApi',
+            0 => 'C:\\ProjetosEstudos\\urna-simulado-back\\app',
+            1 => 'C:\\ProjetosEstudos\\urna-simulado-back\\app/OpenApi',
           ),
         ),
       ),
@@ -488,8 +488,8 @@
       ),
       'paths' => 
       array (
-        'docs' => 'C:\\ProjetosEstudos\\urna-simulado-Old\\storage\\api-docs',
-        'views' => 'C:\\ProjetosEstudos\\urna-simulado-Old\\resources/views/vendor/l5-swagger',
+        'docs' => 'C:\\ProjetosEstudos\\urna-simulado-back\\storage\\api-docs',
+        'views' => 'C:\\ProjetosEstudos\\urna-simulado-back\\resources/views/vendor/l5-swagger',
         'base' => NULL,
         'excludes' => 
         array (
@@ -574,14 +574,14 @@
       'single' => 
       array (
         'driver' => 'single',
-        'path' => 'C:\\ProjetosEstudos\\urna-simulado-Old\\storage\\logs/laravel.log',
+        'path' => 'C:\\ProjetosEstudos\\urna-simulado-back\\storage\\logs/laravel.log',
         'level' => 'debug',
         'replace_placeholders' => true,
       ),
       'daily' => 
       array (
         'driver' => 'daily',
-        'path' => 'C:\\ProjetosEstudos\\urna-simulado-Old\\storage\\logs/laravel.log',
+        'path' => 'C:\\ProjetosEstudos\\urna-simulado-back\\storage\\logs/laravel.log',
         'level' => 'debug',
         'days' => 14,
         'replace_placeholders' => true,
@@ -646,7 +646,7 @@
       ),
       'emergency' => 
       array (
-        'path' => 'C:\\ProjetosEstudos\\urna-simulado-Old\\storage\\logs/laravel.log',
+        'path' => 'C:\\ProjetosEstudos\\urna-simulado-back\\storage\\logs/laravel.log',
       ),
     ),
   ),
@@ -722,7 +722,7 @@
       'theme' => 'default',
       'paths' => 
       array (
-        0 => 'C:\\ProjetosEstudos\\urna-simulado-Old\\resources\\views/vendor/mail',
+        0 => 'C:\\ProjetosEstudos\\urna-simulado-back\\resources\\views/vendor/mail',
       ),
     ),
   ),
@@ -841,7 +841,7 @@
     'lifetime' => 120,
     'expire_on_close' => false,
     'encrypt' => false,
-    'files' => 'C:\\ProjetosEstudos\\urna-simulado-Old\\storage\\framework/sessions',
+    'files' => 'C:\\ProjetosEstudos\\urna-simulado-back\\storage\\framework/sessions',
     'connection' => NULL,
     'table' => 'sessions',
     'store' => NULL,
@@ -980,8 +980,8 @@
   array (
     'paths' => 
     array (
-      0 => 'C:\\ProjetosEstudos\\urna-simulado-Old\\resources\\views',
+      0 => 'C:\\ProjetosEstudos\\urna-simulado-back\\resources\\views',
     ),
-    'compiled' => 'C:\\ProjetosEstudos\\urna-simulado-Old\\storage\\framework\\views',
+    'compiled' => 'C:\\ProjetosEstudos\\urna-simulado-back\\storage\\framework\\views',
   ),
 );
