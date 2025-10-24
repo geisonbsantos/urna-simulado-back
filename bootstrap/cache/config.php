@@ -17,7 +17,7 @@
     'fallback_locale' => 'en',
     'faker_locale' => 'en_US',
     'cipher' => 'AES-256-CBC',
-    'key' => 'base64:vg74XSYqSY91uqRQPNhF+jg8u6ArB8RoE157ZQxkweY=',
+    'key' => 'base64:0a5pjINCRYCF2tix/gawf4xTNrwwjOQJWRjHX1r2GjY=',
     'previous_keys' => 
     array (
     ),
@@ -225,8 +225,8 @@
       'file' => 
       array (
         'driver' => 'file',
-        'path' => 'C:\\ProjetosEstudos\\urna-simulado-back\\storage\\framework/cache/data',
-        'lock_path' => 'C:\\ProjetosEstudos\\urna-simulado-back\\storage\\framework/cache/data',
+        'path' => 'C:\\PROJETOS\\urna-simulado-back\\storage\\framework/cache/data',
+        'lock_path' => 'C:\\PROJETOS\\urna-simulado-back\\storage\\framework/cache/data',
       ),
       'memcached' => 
       array (
@@ -281,7 +281,7 @@
       array (
         'driver' => 'sqlite',
         'url' => NULL,
-        'database' => 'C:\\ProjetosEstudos\\urna-simulado-back\\database\\database.sqlite',
+        'database' => 'C:\\PROJETOS\\urna-simulado-back\\database\\database.sqlite',
         'prefix' => '',
         'foreign_key_constraints' => true,
         'busy_timeout' => NULL,
@@ -398,7 +398,7 @@
       'local' => 
       array (
         'driver' => 'local',
-        'root' => 'C:\\ProjetosEstudos\\urna-simulado-back\\storage\\app/private',
+        'root' => 'C:\\PROJETOS\\urna-simulado-back\\storage\\app/private',
         'serve' => true,
         'throw' => false,
         'report' => false,
@@ -406,7 +406,7 @@
       'public' => 
       array (
         'driver' => 'local',
-        'root' => 'C:\\ProjetosEstudos\\urna-simulado-back\\storage\\app/public',
+        'root' => 'C:\\PROJETOS\\urna-simulado-back\\storage\\app/public',
         'url' => 'http://localhost/storage',
         'visibility' => 'public',
         'throw' => false,
@@ -428,128 +428,7 @@
     ),
     'links' => 
     array (
-      'C:\\ProjetosEstudos\\urna-simulado-back\\public\\storage' => 'C:\\ProjetosEstudos\\urna-simulado-back\\storage\\app/public',
-    ),
-  ),
-  'l5-swagger' => 
-  array (
-    'default' => 'default',
-    'documentations' => 
-    array (
-      'default' => 
-      array (
-        'api' => 
-        array (
-          'title' => 'L5 Swagger UI',
-        ),
-        'routes' => 
-        array (
-          'api' => 'api/documentation',
-        ),
-        'paths' => 
-        array (
-          'use_absolute_path' => true,
-          'swagger_ui_assets_path' => 'vendor/swagger-api/swagger-ui/dist/',
-          'docs_json' => 'api-docs.json',
-          'docs_yaml' => 'api-docs.yaml',
-          'format_to_use_for_docs' => 'json',
-          'annotations' => 
-          array (
-            0 => 'C:\\ProjetosEstudos\\urna-simulado-back\\app',
-            1 => 'C:\\ProjetosEstudos\\urna-simulado-back\\app/OpenApi',
-          ),
-        ),
-      ),
-    ),
-    'defaults' => 
-    array (
-      'routes' => 
-      array (
-        'docs' => 'docs',
-        'oauth2_callback' => 'api/oauth2-callback',
-        'middleware' => 
-        array (
-          'api' => 
-          array (
-          ),
-          'asset' => 
-          array (
-          ),
-          'docs' => 
-          array (
-          ),
-          'oauth2_callback' => 
-          array (
-          ),
-        ),
-        'group_options' => 
-        array (
-        ),
-      ),
-      'paths' => 
-      array (
-        'docs' => 'C:\\ProjetosEstudos\\urna-simulado-back\\storage\\api-docs',
-        'views' => 'C:\\ProjetosEstudos\\urna-simulado-back\\resources/views/vendor/l5-swagger',
-        'base' => NULL,
-        'excludes' => 
-        array (
-        ),
-      ),
-      'scanOptions' => 
-      array (
-        'default_processors_configuration' => 
-        array (
-        ),
-        'analyser' => NULL,
-        'analysis' => NULL,
-        'processors' => 
-        array (
-        ),
-        'pattern' => NULL,
-        'exclude' => 
-        array (
-        ),
-        'open_api_spec_version' => '3.0.0',
-      ),
-      'securityDefinitions' => 
-      array (
-        'securitySchemes' => 
-        array (
-        ),
-        'security' => 
-        array (
-          0 => 
-          array (
-          ),
-        ),
-      ),
-      'generate_always' => false,
-      'generate_yaml_copy' => false,
-      'proxy' => false,
-      'additional_config_url' => NULL,
-      'operations_sort' => NULL,
-      'validator_url' => NULL,
-      'ui' => 
-      array (
-        'display' => 
-        array (
-          'dark_mode' => false,
-          'doc_expansion' => 'none',
-          'filter' => true,
-        ),
-        'authorization' => 
-        array (
-          'persist_authorization' => false,
-          'oauth2' => 
-          array (
-            'use_pkce_with_authorization_code_grant' => false,
-          ),
-        ),
-      ),
-      'constants' => 
-      array (
-        'L5_SWAGGER_CONST_HOST' => 'http://my-default-host.com',
-      ),
+      'C:\\PROJETOS\\urna-simulado-back\\public\\storage' => 'C:\\PROJETOS\\urna-simulado-back\\storage\\app/public',
     ),
   ),
   'logging' => 
@@ -574,14 +453,14 @@
       'single' => 
       array (
         'driver' => 'single',
-        'path' => 'C:\\ProjetosEstudos\\urna-simulado-back\\storage\\logs/laravel.log',
+        'path' => 'C:\\PROJETOS\\urna-simulado-back\\storage\\logs/laravel.log',
         'level' => 'debug',
         'replace_placeholders' => true,
       ),
       'daily' => 
       array (
         'driver' => 'daily',
-        'path' => 'C:\\ProjetosEstudos\\urna-simulado-back\\storage\\logs/laravel.log',
+        'path' => 'C:\\PROJETOS\\urna-simulado-back\\storage\\logs/laravel.log',
         'level' => 'debug',
         'days' => 14,
         'replace_placeholders' => true,
@@ -646,7 +525,7 @@
       ),
       'emergency' => 
       array (
-        'path' => 'C:\\ProjetosEstudos\\urna-simulado-back\\storage\\logs/laravel.log',
+        'path' => 'C:\\PROJETOS\\urna-simulado-back\\storage\\logs/laravel.log',
       ),
     ),
   ),
@@ -722,7 +601,7 @@
       'theme' => 'default',
       'paths' => 
       array (
-        0 => 'C:\\ProjetosEstudos\\urna-simulado-back\\resources\\views/vendor/mail',
+        0 => 'C:\\PROJETOS\\urna-simulado-back\\resources\\views/vendor/mail',
       ),
     ),
   ),
@@ -841,7 +720,7 @@
     'lifetime' => 120,
     'expire_on_close' => false,
     'encrypt' => false,
-    'files' => 'C:\\ProjetosEstudos\\urna-simulado-back\\storage\\framework/sessions',
+    'files' => 'C:\\PROJETOS\\urna-simulado-back\\storage\\framework/sessions',
     'connection' => NULL,
     'table' => 'sessions',
     'store' => NULL,
@@ -980,8 +859,128 @@
   array (
     'paths' => 
     array (
-      0 => 'C:\\ProjetosEstudos\\urna-simulado-back\\resources\\views',
+      0 => 'C:\\PROJETOS\\urna-simulado-back\\resources\\views',
     ),
-    'compiled' => 'C:\\ProjetosEstudos\\urna-simulado-back\\storage\\framework\\views',
+    'compiled' => 'C:\\PROJETOS\\urna-simulado-back\\storage\\framework\\views',
+  ),
+  'l5-swagger' => 
+  array (
+    'default' => 'default',
+    'documentations' => 
+    array (
+      'default' => 
+      array (
+        'api' => 
+        array (
+          'title' => 'L5 Swagger UI',
+        ),
+        'routes' => 
+        array (
+          'api' => 'api/documentation',
+        ),
+        'paths' => 
+        array (
+          'use_absolute_path' => true,
+          'swagger_ui_assets_path' => 'vendor/swagger-api/swagger-ui/dist/',
+          'docs_json' => 'api-docs.json',
+          'docs_yaml' => 'api-docs.yaml',
+          'format_to_use_for_docs' => 'json',
+          'annotations' => 
+          array (
+            0 => 'C:\\PROJETOS\\urna-simulado-back\\app',
+          ),
+        ),
+      ),
+    ),
+    'defaults' => 
+    array (
+      'routes' => 
+      array (
+        'docs' => 'docs',
+        'oauth2_callback' => 'api/oauth2-callback',
+        'middleware' => 
+        array (
+          'api' => 
+          array (
+          ),
+          'asset' => 
+          array (
+          ),
+          'docs' => 
+          array (
+          ),
+          'oauth2_callback' => 
+          array (
+          ),
+        ),
+        'group_options' => 
+        array (
+        ),
+      ),
+      'paths' => 
+      array (
+        'docs' => 'C:\\PROJETOS\\urna-simulado-back\\storage\\api-docs',
+        'views' => 'C:\\PROJETOS\\urna-simulado-back\\resources/views/vendor/l5-swagger',
+        'base' => NULL,
+        'excludes' => 
+        array (
+        ),
+      ),
+      'scanOptions' => 
+      array (
+        'default_processors_configuration' => 
+        array (
+        ),
+        'analyser' => NULL,
+        'analysis' => NULL,
+        'processors' => 
+        array (
+        ),
+        'pattern' => NULL,
+        'exclude' => 
+        array (
+        ),
+        'open_api_spec_version' => '3.0.0',
+      ),
+      'securityDefinitions' => 
+      array (
+        'securitySchemes' => 
+        array (
+        ),
+        'security' => 
+        array (
+          0 => 
+          array (
+          ),
+        ),
+      ),
+      'generate_always' => false,
+      'generate_yaml_copy' => false,
+      'proxy' => false,
+      'additional_config_url' => NULL,
+      'operations_sort' => NULL,
+      'validator_url' => NULL,
+      'ui' => 
+      array (
+        'display' => 
+        array (
+          'dark_mode' => false,
+          'doc_expansion' => 'none',
+          'filter' => true,
+        ),
+        'authorization' => 
+        array (
+          'persist_authorization' => false,
+          'oauth2' => 
+          array (
+            'use_pkce_with_authorization_code_grant' => false,
+          ),
+        ),
+      ),
+      'constants' => 
+      array (
+        'L5_SWAGGER_CONST_HOST' => 'http://my-default-host.com',
+      ),
+    ),
   ),
 );
