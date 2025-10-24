@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('elections', function (Blueprint $table) {
             $table->id();
             $table->foreignId('election_type_id')->constrained('election_types')->cascadeOnDelete();
-            $table->foreignId('address_id')->constrained('election_types')->cascadeOnDelete();
+            $table->foreignId('address_id')->constrained('addresses')->cascadeOnDelete();
             $table->foreignId('user_id')->constrained('users')->cascadeOnDelete();
             $table->date('period');
             $table->timestamps();
