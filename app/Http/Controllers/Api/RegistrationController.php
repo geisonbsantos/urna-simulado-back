@@ -15,14 +15,14 @@ class RegistrationController extends CrudController
         parent::__construct($service);
     }
 
-    protected function beforeStore(StoreUpdateRegistrationFormRequest $request): JsonResponse
+    public function beforeStore(StoreUpdateRegistrationFormRequest $request): JsonResponse
     {
         $request->validated();
 
         return $this->store($request);
     }
 
-    protected function beforeUpdate(StoreUpdateRegistrationFormRequest $request, string $id): JsonResponse
+    public function beforeUpdate(StoreUpdateRegistrationFormRequest $request, string $id): JsonResponse
     {
         $request->validated();
 

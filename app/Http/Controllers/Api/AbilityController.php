@@ -14,14 +14,14 @@ class AbilityController extends CrudController
         parent::__construct($service);
     }
 
-    protected function beforeStore(StoreUpdateAbilityFormRequest $request): JsonResponse
+    public function beforeStore(StoreUpdateAbilityFormRequest $request): JsonResponse
     {
         $request->validated();
 
         return $this->store($request);
     }
 
-    protected function beforeUpdate(StoreUpdateAbilityFormRequest $request, string $uuid): JsonResponse
+    public function beforeUpdate(StoreUpdateAbilityFormRequest $request, string $uuid): JsonResponse
     {
         $request->validated();
 

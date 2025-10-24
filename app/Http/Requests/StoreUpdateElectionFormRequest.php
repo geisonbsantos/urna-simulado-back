@@ -5,6 +5,7 @@ namespace App\Http\Requests;
 use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Http\Exceptions\HttpResponseException;
+use Illuminate\Support\Facades\Log;
 
 class StoreUpdateElectionFormRequest extends FormRequest
 {
@@ -41,6 +42,7 @@ class StoreUpdateElectionFormRequest extends FormRequest
 
     public function failedValidation(Validator $validator)
     {
+        Log::debug('Validation errors', $validator->errors()->toArray());
         $errors = $validator->errors();
         $response = response()->json([
             'error' => 'Erro no envio de dados.',

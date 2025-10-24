@@ -14,14 +14,14 @@ class CandidateController extends CrudController
         parent::__construct($service);
     }
 
-    protected function beforeStore(StoreUpdateCandidateFormRequest $request): JsonResponse
+    public function beforeStore(StoreUpdateCandidateFormRequest $request): JsonResponse
     {
         $request->validated();
 
         return $this->store($request);
     }
 
-    protected function beforeUpdate(StoreUpdateCandidateFormRequest $request, int $id): JsonResponse
+    public function beforeUpdate(StoreUpdateCandidateFormRequest $request, int $id): JsonResponse
     {
         $request->validated();
 

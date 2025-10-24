@@ -15,14 +15,14 @@ class AddressController extends CrudController
         parent::__construct($service);
     }
 
-    protected function beforeStore(StoreUpdateAddressFormRequest $request): JsonResponse
+    public function beforeStore(StoreUpdateAddressFormRequest $request): JsonResponse
     {
         $request->validated();
 
         return $this->store($request);
     }
 
-    protected function beforeUpdate(StoreUpdateAddressFormRequest $request, int $id): JsonResponse
+    public function beforeUpdate(StoreUpdateAddressFormRequest $request, int $id): JsonResponse
     {
         $request->validated();
 

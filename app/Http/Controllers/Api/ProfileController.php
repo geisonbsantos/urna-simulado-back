@@ -15,28 +15,28 @@ class ProfileController extends CrudController
         parent::__construct($service);
     }
 
-    protected function beforeStore(StoreUpdateProfileFormRequest $request): JsonResponse
+    public function beforeStore(StoreUpdateProfileFormRequest $request): JsonResponse
     {
         $request->validated();
 
         return $this->store($request);
     }
 
-    protected function beforeUpdate(StoreUpdateProfileFormRequest $request, string $uuid): JsonResponse
+    public function beforeUpdate(StoreUpdateProfileFormRequest $request, string $uuid): JsonResponse
     {
         $request->validated();
 
         return $this->update($request, $uuid);
     }
 
-    protected function getAbilities(int $id): Response
+    public function getAbilities(int $id): Response
     {
         $response = $this->service->getAbilities($id);
 
         return response($response, 200);
     }
 
-    protected function storeAbilities(AttachProfileAbilitiesFormRequest $request, int $id): JsonResponse
+    public function storeAbilities(AttachProfileAbilitiesFormRequest $request, int $id): JsonResponse
     {
         $request->validated();
         $this->service->storeAbilities($request->all(), $id);

@@ -16,19 +16,19 @@ class UserController extends CrudController
         parent::__construct($service);
     }
 
-    protected function beforeStore(StoreUpdateUserFormRequest $request): JsonResponse
+    public function beforeStore(StoreUpdateUserFormRequest $request): JsonResponse
     {
         $request->validated();
         return $this->store($request);
     }
 
-    protected function beforeUpdate(StoreUpdateUserFormRequest $request, int $id): JsonResponse
+    public function beforeUpdate(StoreUpdateUserFormRequest $request, int $id): JsonResponse
     {
         $request->validated();
         return $this->update($request, $id);
     }
 
-    protected function storeProfiles(Request $request, int $id): JsonResponse
+    public function storeProfiles(Request $request, int $id): JsonResponse
     {
         $this->service->storeProfiles($request->all(), $id);
 

@@ -14,14 +14,14 @@ class FaqController extends CrudController
         parent::__construct($service);
     }
 
-    protected function beforeStore(StoreUpdateFaqFormRequest $request): JsonResponse
+    public function beforeStore(StoreUpdateFaqFormRequest $request): JsonResponse
     {
         $request->validated();
 
         return $this->store($request);
     }
 
-    protected function beforeUpdate(StoreUpdateFaqFormRequest $request, string $id): JsonResponse
+    public function beforeUpdate(StoreUpdateFaqFormRequest $request, string $id): JsonResponse
     {
         $request->validated();
 

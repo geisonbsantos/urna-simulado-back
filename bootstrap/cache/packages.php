@@ -1,15 +1,4 @@
 <?php return array (
-  'darkaonline/l5-swagger' => 
-  array (
-    'aliases' => 
-    array (
-      'L5Swagger' => 'L5Swagger\\L5SwaggerFacade',
-    ),
-    'providers' => 
-    array (
-      0 => 'L5Swagger\\L5SwaggerServiceProvider',
-    ),
-  ),
   'laravel/pail' => 
   array (
     'providers' => 
@@ -36,6 +25,13 @@
     'providers' => 
     array (
       0 => 'Laravel\\Tinker\\TinkerServiceProvider',
+    ),
+  ),
+  'laravellegends/pt-br-validator' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'LaravelLegends\\PtBrValidator\\ValidatorProvider',
     ),
   ),
   'nesbot/carbon' => 

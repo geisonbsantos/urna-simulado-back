@@ -15,14 +15,14 @@ class ElectionController extends CrudController
         parent::__construct($service);
     }
 
-    protected function beforeStore(StoreUpdateElectionFormRequest $request): JsonResponse
+    public function beforeStore(StoreUpdateElectionFormRequest $request): JsonResponse
     {
         $request->validated();
 
         return $this->store($request);
     }
 
-    protected function beforeUpdate(StoreUpdateElectionFormRequest $request, int $id): JsonResponse
+    public function beforeUpdate(StoreUpdateElectionFormRequest $request, int $id): JsonResponse
     {
         $request->validated();
 
