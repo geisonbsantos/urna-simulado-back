@@ -24,7 +24,7 @@ class VoteRepository extends BaseRepository
             DB::commit();
         } catch (Exception $e) {
             DB::rollback();
-            throw new Oci8Exception($e->getMessage(), 400);
+            throw new \Exception($e->getMessage(), 400);
         }
     }
 
@@ -37,7 +37,7 @@ class VoteRepository extends BaseRepository
             DB::commit();
         } catch (Exception $e) {
             DB::rollback();
-            throw new Oci8Exception($e->getMessage(), 400);
+            throw new \Exception($e->getMessage(), 400);
         }
     }
 

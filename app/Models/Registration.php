@@ -32,4 +32,14 @@ class Registration extends Model
     {
         return $this->belongsTo(Election::class);
     }
+
+    public function votes()
+    {
+        return $this->hasMany(Vote::class);
+    }
+
+    public function getTotalVotesAttribute()
+    {
+        return $this->votes()->count();
+    }
 }
