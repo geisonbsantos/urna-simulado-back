@@ -24,4 +24,14 @@ class Candidate extends Model
     {
         return $this->belongsTo(CandidateType::class);
     }
+
+    public function registrations()
+    {
+        return $this->hasMany(Registration::class);
+    }
+
+    public function votes()
+    {
+        return $this->hasManyThrough(Vote::class, Registration::class);
+    }
 }
